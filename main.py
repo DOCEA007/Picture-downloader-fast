@@ -23,7 +23,7 @@ class image_downloader:
         master.overrideredirect(True)
         fake_title_bar = Frame(master, bg=color, relief=RAISED, bd=0.5)
         fake_title_bar.pack(expand=1, fill=X)
-        fake_title_label = Label(fake_title_bar, text="\t          Sauce downloader", bg=color, fg="white")
+        fake_title_label = Label(fake_title_bar, text="\t          Pic downloader", bg=color, fg="white")
         fake_title_label.pack(side=LEFT)
             #Binding the title bar
         def move_app(e):
@@ -50,8 +50,8 @@ class image_downloader:
 
         # fake_title_min_button = Button(fake_title_bar, text="━", bg=color, fg="white", command=minimize).pack(side=RIGHT)
         #=====================================================
-        master.title("Sauce downloader")
-        self.label = Label(master, text="Downloader by ~your mother", bg=color, fg="white")
+        master.title("Pic downloader")
+        self.label = Label(master, text="Downloader by ~docea", bg=color, fg="white")
         self.label.pack()
         frame1 = Frame(master,bg=color)
         frame1.pack()
@@ -98,7 +98,7 @@ class image_downloader:
             tags=self.querysearch.get().replace('/', '%20')
         except:
             tags="ass%20boobs"
-        url = f"https://gelbooru.com/index.php?page=dapi&s=post&q=index&json=1&limit=1&tags={tags}%20sort:random"
+        url = f"https://example.com/index.php?page=dapi&s=post&q=index&json=1&limit=1&tags={tags}"
         self.master.withdraw()
         sizes=[]
         def thread_func():
